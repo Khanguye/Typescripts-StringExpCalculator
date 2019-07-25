@@ -6,8 +6,8 @@ sym.toString();
 sym.check();
 
 let pos : Postfix = new Postfix();
-//pos.add(6,5,2,3,"+",8,"*","+",3,"+","*");
-pos.add(0,0,0,"*","-");
+pos.add(6,5,2,3,"+",8,"*","+",3,"+","*");
+//pos.add(0,0,0,"*","-");
 pos.evaluate();
 pos.toString();
 

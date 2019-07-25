@@ -6,6 +6,6 @@ var sym = new BalancingSymbols_1.BalancingSymbols("[*]]");
 sym.toString();
 sym.check();
 var pos = new Postfix_1.Postfix();
-pos.add(0, 0, 0, "*", "-");
+pos.add(6, 5, 2, 3, "+", 8, "*", "+", 3, "+", "*");
 pos.evaluate();
 pos.toString();
