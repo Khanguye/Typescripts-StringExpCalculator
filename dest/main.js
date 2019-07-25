@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var BalancingSymbols_1 = require("./BalancingSymbols");
+var Postfix_1 = require("./Postfix");
+var sym = new BalancingSymbols_1.BalancingSymbols("[*]]");
+sym.toString();
+sym.check();
+var pos = new Postfix_1.Postfix();
+pos.add(0, 0, 0, "*", "-");
+pos.evaluate();
+pos.toString();
