@@ -84,8 +84,13 @@ export class Postfix{
     }
 
     toString(){
-        //console.log(this.inputStack.join(""));
-        console.log(this.inputStack.join("").split("").reverse().join(""));
+        let output : string = "";
+        for(let i = this.inputStack.length-1; i >= 0; i--)
+        {
+            output += this.inputStack[i];
+        }
+        console.log(output);
+        return output;
     }
 
 }

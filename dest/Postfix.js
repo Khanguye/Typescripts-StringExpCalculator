@@ -67,7 +67,12 @@ var Postfix = (function () {
         return NaN;
     };
     Postfix.prototype.toString = function () {
-        console.log(this.inputStack.join("").split("").reverse().join(""));
+        var output = "";
+        for (var i = this.inputStack.length - 1; i >= 0; i--) {
+            output += this.inputStack[i];
+        }
+        console.log(output);
+        return output;
     };
     return Postfix;
 }());
